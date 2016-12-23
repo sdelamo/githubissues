@@ -68,3 +68,7 @@ assets {
 test {
     systemProperties System.properties
 }
+
+bootRun {
+    systemProperties System.properties
+}
