@@ -30,4 +30,8 @@ class GithubIssue implements Validateable {
         labels nullable: true
         assignees nullable:  true
     }
+
+    Map toMap() {
+        [title: title, body: body]
+    }
 }

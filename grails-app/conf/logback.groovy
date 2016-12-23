@@ -37,3 +37,6 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
 else {
     root(ERROR, ['STDOUT'])
 }
+
+logger 'githubissues', INFO, ['STDOUT'], false
+

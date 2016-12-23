@@ -53,14 +53,18 @@ dependencies {
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+    compile "com.budjb:http-requests-jersey1:1.0.2"
 }
 
 bootRun {
     jvmArgs('-Dspring.output.ansi.enabled=always')
 }
 
-
 assets {
     minifyJs = true
     minifyCss = true
+}
+
+test {
+    systemProperties System.properties
 }

@@ -1,6 +1,8 @@
 ---
 github:
-    repository: https://github.com/sdelamo/githubissues
+    repository: ${GITHUB_REPOSITORY}
+    username: '${GITHUB_USERNAME}'
+    password: '${GITHUB_PASSWORD}'
 ---
 grails:
     profile: web
